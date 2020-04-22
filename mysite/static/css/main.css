@@ -51,38 +51,14 @@ nav {
   .container-fluid {
     padding: 0 !important; } }
 
-section.diensten {
-  background-color: var(--background-color-light); }
-  section.diensten .diensten-title {
-    text-align: center;
-    margin: 1em 0 2em 0; }
-  section.diensten .diensten-wrapper .dienst {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 220px;
-    width: 220px;
-    margin: 0 20px;
-    background-color: var(--oranje);
+footer {
+  background-color: var(--groen-button); }
+  footer .footer {
+    padding: 2em 11% 1em 11%;
     color: var(--color-white);
-    border-radius: 50%;
-    cursor: pointer;
-    transition: all 0.5s ease;
-    text-align: center; }
-    section.diensten .diensten-wrapper .dienst:hover {
-      transform: scale(1.1);
-      z-index: 2; }
-    section.diensten .diensten-wrapper .dienst p {
-      font-size: 20px;
-      font-weight: bold;
-      margin-top: 10px; }
-
-@media screen and (max-width: 768px) {
-  section.diensten .diensten-title {
-    margin: 50px auto; }
-  section.diensten .dienst {
-    margin-bottom: 20px !important; } }
+    display: flex; }
+    footer .footer p {
+      font-size: 25px; }
 
 section.footer-menu {
   padding: 2em 11% 0 11%;
@@ -111,113 +87,6 @@ section.footer-menu {
     width: 100%; }
   section.footer-menu .logo-energieloket-img {
     width: 100%; }
-
-footer {
-  background-color: var(--groen-button); }
-  footer .footer {
-    padding: 2em 11% 1em 11%;
-    color: var(--color-white);
-    display: flex; }
-    footer .footer p {
-      font-size: 25px; }
-
-section.gebruikers .col {
-  color: var(--color-white);
-  min-height: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  transition: all 0.5s ease; }
-  section.gebruikers .col:hover {
-    transform: scale(1.01);
-    z-index: 2;
-    border-radius: 5px; }
-  section.gebruikers .col h1 {
-    font-size: 65px;
-    margin-top: 40px;
-    font-weight: 700; }
-  section.gebruikers .col img {
-    height: 250px;
-    margin: 40px 0;
-    width: 100%; }
-
-section.gebruikers .col1 {
-  background-color: var(--licht-groen); }
-
-section.gebruikers .col2 {
-  background-color: var(--donker-groen); }
-
-section.gebruikers .col3 {
-  background-color: var(--aqua); }
-
-header {
-  color: var(--color-white);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; }
-  header .carousel {
-    position: relative; }
-    header .carousel img {
-      width: 100%;
-      height: 80vh;
-      object-fit: cover; }
-    header .carousel .carousel-caption {
-      left: 11%;
-      margin-bottom: 200px; }
-      header .carousel .carousel-caption h1,
-      header .carousel .carousel-caption h3,
-      header .carousel .carousel-caption p {
-        text-align: left;
-        font-weight: bold; }
-      header .carousel .carousel-caption h1 {
-        color: var(--color-white);
-        font-size: 90px;
-        margin-bottom: 30px;
-        max-width: 60%; }
-      header .carousel .carousel-caption h3 {
-        margin-bottom: 30px;
-        font-size: 50px; }
-      header .carousel .carousel-caption p {
-        position: absolute;
-        color: #000;
-        background-color: var(--background-color-white);
-        padding: 20px 30px;
-        font-size: 30px;
-        border-radius: 500px; }
-      header .carousel .carousel-caption a {
-        z-index: 15000; }
-  header .carousel .carousel-indicators {
-    z-index: 1400; }
-    header .carousel .carousel-indicators li {
-      width: 0.625rem;
-      height: 0.625rem;
-      cursor: pointer;
-      border-radius: 50%; }
-  header .hero-tekst {
-    padding-bottom: 5em;
-    max-width: 1000px; }
-    header .hero-tekst h1 {
-      font-size: 90px;
-      font-weight: bold; }
-    header .hero-tekst h3 {
-      font-size: 50px; }
-    header .hero-tekst button {
-      border: none;
-      border-radius: 30px;
-      padding: 5px 20px;
-      font-size: 30px;
-      margin-top: 20px; }
-
-@media screen and (max-width: 1200px) {
-  header .carousel .carousel-caption {
-    left: 11%;
-    margin-bottom: 200px; }
-    header .carousel .carousel-caption h1 {
-      font-size: 50px;
-      max-width: 100%; }
-    header .carousel .carousel-caption h3 {
-      font-size: 30px; } }
 
 section.initiatieven .initiatief {
   display: flex;
@@ -270,66 +139,6 @@ section.initiatieven .initiatief3 {
 @media screen and (max-width: 768px) {
   section.initiatieven {
     padding: 0; } }
-
-section.map {
-  position: relative; }
-  section.map .map-titel {
-    padding: 0 9%;
-    font-weight: bold;
-    margin-bottom: 1em; }
-  section.map .container-fluid {
-    padding: 0; }
-  section.map #mapid {
-    height: 55vh; }
-    section.map #mapid .leaflet-tile-pane {
-      -webkit-filter: grayscale(100%);
-      filter: grayscale(100%); }
-  section.map .map-wrapper {
-    position: absolute;
-    z-index: 1000;
-    width: 600px;
-    height: 500px;
-    background-color: #fff;
-    left: 200px;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    font-size: 20px;
-    cursor: initial; }
-    section.map .map-wrapper .arrow-down {
-      position: absolute;
-      right: 40px;
-      transform: scale(2);
-      cursor: pointer; }
-    section.map .map-wrapper .map-wrapper-content {
-      padding: 3em; }
-      section.map .map-wrapper .map-wrapper-content h1 {
-        color: var(--groen-button); }
-      section.map .map-wrapper .map-wrapper-content .groene-cirkel,
-      section.map .map-wrapper .map-wrapper-content .oranje-cirkel {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        margin-right: 20px;
-        margin-bottom: 20px; }
-      section.map .map-wrapper .map-wrapper-content .iniatief-ondernemersinitiatief,
-      section.map .map-wrapper .map-wrapper-content .initiatief-wijkinitiatief {
-        display: flex;
-        align-items: center; }
-      section.map .map-wrapper .map-wrapper-content .groene-cirkel {
-        background-color: var(--groen-button); }
-      section.map .map-wrapper .map-wrapper-content .oranje-cirkel {
-        background-color: var(--oranje); }
-    section.map .map-wrapper .legenda {
-      background-color: var(--groen-button);
-      color: #fff;
-      height: 80px;
-      padding: 30px 3em; }
-
-@media screen and (max-width: 768px) {
-  section.map .map-wrapper {
-    display: none; } }
 
 .shadow {
   position: absolute;
@@ -442,6 +251,351 @@ nav {
       nav .nav-items .accessoires {
         padding: 20px 30px; } }
 
+section.eigenaar-content {
+  margin: 5em 5em;
+  position: relative;
+  height: 80vh; }
+  section.eigenaar-content .content-links {
+    position: absolute;
+    height: 60vh;
+    top: 100px;
+    left: 0;
+    width: 60%;
+    background-color: var(--background-color-light);
+    z-index: 300;
+    padding: 30px; }
+    section.eigenaar-content .content-links h1 {
+      font-size: 50px;
+      font-weight: bold; }
+    section.eigenaar-content .content-links p {
+      font-size: 35px;
+      margin-top: 30px; }
+  section.eigenaar-content .afbeelding {
+    position: absolute;
+    top: 0;
+    left: 30%;
+    background-image: url(imgpath/Hero/hero.jpg);
+    height: 80vh;
+    width: 70%;
+    background-position: -800px -650px; }
+
+section.diensten {
+  background-color: var(--background-color-light); }
+  section.diensten .diensten-title {
+    margin: 2em auto; }
+  section.diensten .diensten-wrapper .dienst {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 220px;
+    width: 220px;
+    margin: 0 20px;
+    background-color: var(--oranje);
+    color: var(--color-white);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    text-align: center; }
+    section.diensten .diensten-wrapper .dienst:hover {
+      transform: scale(1.1);
+      z-index: 2; }
+    section.diensten .diensten-wrapper .dienst p {
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 10px; }
+  section.diensten .diensten-wrapper .dienst1 {
+    margin-left: auto; }
+
+section.gebruikers .col {
+  color: var(--color-white);
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s ease; }
+  section.gebruikers .col:hover {
+    transform: scale(1.01);
+    z-index: 2;
+    border-radius: 5px; }
+  section.gebruikers .col h1 {
+    font-size: 65px;
+    margin-top: 40px;
+    font-weight: 700; }
+  section.gebruikers .col img {
+    height: 200px;
+    margin: 40px 0;
+    width: 100%; }
+
+section.gebruikers #aan-de-slag {
+  background-color: var(--licht-groen); }
+  section.gebruikers #aan-de-slag::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    margin-left: -0.5em;
+    bottom: -2em;
+    left: 50%;
+    box-sizing: border-box;
+    border: 1em solid black;
+    border-color: var(--licht-groen);
+    transform-origin: 0 0;
+    transform: rotate(-45deg); }
+
+section.gebruikers #financieel {
+  background-color: var(--donker-groen); }
+  section.gebruikers #financieel::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    margin-left: -0.5em;
+    bottom: -2em;
+    left: 50%;
+    box-sizing: border-box;
+    border: 1em solid black;
+    border-color: var(--donker-groen);
+    transform-origin: 0 0;
+    transform: rotate(-45deg); }
+
+section.gebruikers .active {
+  box-shadow: 0px 3px 3px 0 rgba(0, 0, 0, 0.4); }
+
+section.gebruikers .no-after::after {
+  content: none !important; }
+
+section.gebruikers .do-after::after {
+  content: '' !important; }
+
+header {
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: 70vh;
+  background-image: url(imgpath/Hero/hero-eigenaar.png);
+  background-size: cover;
+  background-position: center; }
+  header .header-content {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    margin-left: 10%;
+    margin-bottom: 200px; }
+    header .header-content .tekst {
+      margin-bottom: 10%; }
+    header .header-content h1,
+    header .header-content h3 {
+      text-align: left;
+      font-weight: bold; }
+    header .header-content h1 {
+      color: var(--color-white);
+      font-size: 110px;
+      margin-bottom: 30px; }
+    header .header-content h3 {
+      margin-bottom: 30px;
+      font-size: 50px; }
+    header .header-content img {
+      width: 70%;
+      margin-bottom: 20%; }
+
+section.diensten {
+  background-color: var(--background-color-light); }
+  section.diensten .diensten-title {
+    text-align: center;
+    margin: 1em 0 2em 0; }
+  section.diensten .diensten-wrapper .dienst {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 220px;
+    width: 220px;
+    margin: 0 20px;
+    background-color: var(--oranje);
+    color: var(--color-white);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    text-align: center; }
+    section.diensten .diensten-wrapper .dienst:hover {
+      transform: scale(1.1);
+      z-index: 2; }
+    section.diensten .diensten-wrapper .dienst p {
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 10px; }
+
+@media screen and (max-width: 768px) {
+  section.diensten .diensten-title {
+    margin: 50px auto; }
+  section.diensten .dienst {
+    margin-bottom: 20px !important; } }
+
+section.gebruikers .col {
+  color: var(--color-white);
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  transition: all 0.5s ease; }
+  section.gebruikers .col:hover {
+    transform: scale(1.01);
+    z-index: 2;
+    border-radius: 5px; }
+  section.gebruikers .col h1 {
+    font-size: 65px;
+    margin-top: 40px;
+    font-weight: 700; }
+  section.gebruikers .col img {
+    height: 250px;
+    margin: 40px 0;
+    width: 100%; }
+
+section.gebruikers .col1 {
+  background-color: var(--licht-groen); }
+
+section.gebruikers .col2 {
+  background-color: var(--donker-groen); }
+
+section.gebruikers .col3 {
+  background-color: var(--aqua); }
+
+header {
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  header .carousel {
+    position: relative; }
+    header .carousel img {
+      width: 100%;
+      height: 80vh;
+      object-fit: cover; }
+    header .carousel .carousel-caption {
+      left: 11%;
+      margin-bottom: 200px; }
+      header .carousel .carousel-caption h1,
+      header .carousel .carousel-caption h3,
+      header .carousel .carousel-caption p {
+        text-align: left;
+        font-weight: bold; }
+      header .carousel .carousel-caption h1 {
+        color: var(--color-white);
+        font-size: 90px;
+        margin-bottom: 30px;
+        max-width: 60%; }
+      header .carousel .carousel-caption h3 {
+        margin-bottom: 30px;
+        font-size: 50px; }
+      header .carousel .carousel-caption p {
+        position: absolute;
+        color: #000;
+        background-color: var(--background-color-white);
+        padding: 20px 30px;
+        font-size: 30px;
+        border-radius: 500px; }
+      header .carousel .carousel-caption a {
+        z-index: 15000; }
+  header .carousel .carousel-indicators {
+    z-index: 1400; }
+    header .carousel .carousel-indicators li {
+      width: 0.625rem;
+      height: 0.625rem;
+      cursor: pointer;
+      border-radius: 50%; }
+  header .hero-tekst {
+    padding-bottom: 5em;
+    max-width: 1000px; }
+    header .hero-tekst h1 {
+      font-size: 90px;
+      font-weight: bold; }
+    header .hero-tekst h3 {
+      font-size: 50px; }
+    header .hero-tekst button {
+      border: none;
+      border-radius: 30px;
+      padding: 5px 20px;
+      font-size: 30px;
+      margin-top: 20px; }
+
+@media screen and (max-width: 1200px) {
+  header .carousel .carousel-caption {
+    left: 11%;
+    margin-bottom: 200px; }
+    header .carousel .carousel-caption h1 {
+      font-size: 50px;
+      max-width: 100%; }
+    header .carousel .carousel-caption h3 {
+      font-size: 30px; } }
+
+section.map {
+  position: relative; }
+  section.map .map-titel {
+    padding: 0 9%;
+    font-weight: bold;
+    margin-bottom: 1em; }
+  section.map .container-fluid {
+    padding: 0; }
+  section.map #mapid {
+    height: 55vh; }
+    section.map #mapid .leaflet-tile-pane {
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%); }
+  section.map .map-wrapper {
+    position: absolute;
+    z-index: 1000;
+    width: 600px;
+    height: 500px;
+    background-color: #fff;
+    left: 200px;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 20px;
+    cursor: initial; }
+    section.map .map-wrapper .arrow-down {
+      position: absolute;
+      right: 40px;
+      transform: scale(2);
+      cursor: pointer; }
+    section.map .map-wrapper .map-wrapper-content {
+      padding: 3em; }
+      section.map .map-wrapper .map-wrapper-content h1 {
+        color: var(--groen-button); }
+      section.map .map-wrapper .map-wrapper-content .groene-cirkel,
+      section.map .map-wrapper .map-wrapper-content .oranje-cirkel {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 20px;
+        margin-bottom: 20px; }
+      section.map .map-wrapper .map-wrapper-content .iniatief-ondernemersinitiatief,
+      section.map .map-wrapper .map-wrapper-content .initiatief-wijkinitiatief {
+        display: flex;
+        align-items: center; }
+      section.map .map-wrapper .map-wrapper-content .groene-cirkel {
+        background-color: var(--groen-button); }
+      section.map .map-wrapper .map-wrapper-content .oranje-cirkel {
+        background-color: var(--oranje); }
+    section.map .map-wrapper .legenda {
+      background-color: var(--groen-button);
+      color: #fff;
+      height: 80px;
+      padding: 30px 3em; }
+
+@media screen and (max-width: 768px) {
+  section.map .map-wrapper {
+    display: none; } }
+
 section.nieuws {
   position: relative; }
   section.nieuws .slick-prev,
@@ -459,17 +613,17 @@ section.nieuws {
     background-size: cover;
     background-position: center; }
     section.nieuws .nieuws-item__1 {
-      background-image: linear-gradient(to bottom, rgba(229, 229, 229, 0) 0%, rgba(153, 153, 153, 0) 40%, rgba(0, 0, 0, 0.81) 100%), url(../assets/Nieuws/vrouw-met-bloemen.jpg);
+      background-image: linear-gradient(to bottom, rgba(229, 229, 229, 0) 0%, rgba(153, 153, 153, 0) 40%, rgba(0, 0, 0, 0.81) 100%), url(imgpath/vrouw-met-bloemen.jpg);
       background-size: cover;
       background-position: center; }
     section.nieuws .nieuws-item__2 {
-      background-image: linear-gradient(to bottom, rgba(229, 229, 229, 0) 0%, rgba(153, 153, 153, 0) 40%, rgba(0, 0, 0, 0.81) 100%), url(../assets/Hero/hero2.jpg); }
+      background-image: linear-gradient(to bottom, rgba(229, 229, 229, 0) 0%, rgba(153, 153, 153, 0) 40%, rgba(0, 0, 0, 0.81) 100%), url(imgpath/Hero/hero2.jpg); }
     section.nieuws .nieuws-item__3 {
-      background-image: linear-gradient(to bottom, rgba(229, 229, 229, 0) 0%, rgba(153, 153, 153, 0) 40%, rgba(0, 0, 0, 0.81) 100%), url(../assets/Hero/hero3.jpg); }
+      background-image: linear-gradient(to bottom, rgba(229, 229, 229, 0) 0%, rgba(153, 153, 153, 0) 40%, rgba(0, 0, 0, 0.81) 100%), url(imgpath/Hero/hero3.jpg); }
     section.nieuws .nieuws-item__4 {
-      background-image: linear-gradient(to bottom, rgba(229, 229, 229, 0) 0%, rgba(153, 153, 153, 0) 40%, rgba(0, 0, 0, 0.81) 100%), url(../assets/Hero/hero4.jpg); }
+      background-image: linear-gradient(to bottom, rgba(229, 229, 229, 0) 0%, rgba(153, 153, 153, 0) 40%, rgba(0, 0, 0, 0.81) 100%), url(imgpath/Hero/hero4.jpg); }
     section.nieuws .nieuws-item__5 {
-      background-image: linear-gradient(to bottom, rgba(229, 229, 229, 0) 0%, rgba(153, 153, 153, 0) 40%, rgba(0, 0, 0, 0.81) 100%), url(../assets/Hero/hero5.jpg); }
+      background-image: linear-gradient(to bottom, rgba(229, 229, 229, 0) 0%, rgba(153, 153, 153, 0) 40%, rgba(0, 0, 0, 0.81) 100%), url(imgpath/Hero/hero5.jpg); }
     section.nieuws .nieuws-item__content {
       display: flex;
       height: 100%;

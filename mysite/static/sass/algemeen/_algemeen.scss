@@ -1,5 +1,8 @@
 @import url('https://p.typekit.net/p.css?s=1&k=moz5nqr&ht=tk&f=2032&a=5795951&app=typekit&e=css');
 
+// Variable to assets path
+$imgpath: "static/assets/";
+
 /* variables */
 body {
 	--color-white: #fff;
@@ -37,7 +40,7 @@ body {
 a {
 	text-decoration: none;
 	color: inherit;
-	
+
 	&:hover {
 		text-decoration: none;
 		color: inherit;
@@ -54,9 +57,23 @@ a {
 section.diensten,
 section.initiatieven,
 section.nieuws {
-	padding: 0 40px 0 40px;
+	padding: 0 9%;
 }
 
 nav {
 	padding: 2em 7% 2em 7%;
+}
+
+
+
+
+// MEDIA QUERIES
+@media screen and(max-width: 768px) {
+	.shadow {
+		display: none;
+	}
+
+	.container-fluid {
+		padding: 0 !important;
+	}
 }

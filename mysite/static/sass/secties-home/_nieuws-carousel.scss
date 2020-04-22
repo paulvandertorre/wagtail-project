@@ -1,3 +1,6 @@
+// Variable to assets path
+$imgpath: "/assets/";
+
 //! NIEUWS
 section.nieuws {
 	position: relative;
@@ -30,7 +33,7 @@ section.nieuws {
 					rgba(153, 153, 153, 0) 40%,
 					rgba(0, 0, 0, 0.81) 100%
 				),
-				url(../../assets/Nieuws/vrouw-met-bloemen.jpg);
+				url(#{imgpath}/vrouw-met-bloemen.jpg);
 			background-size: cover;
 			background-position: center;
 		}
@@ -42,7 +45,7 @@ section.nieuws {
 					rgba(153, 153, 153, 0) 40%,
 					rgba(0, 0, 0, 0.81) 100%
 				),
-				url(../../assets/Hero/hero2.jpg);
+				url(#{imgpath}/Hero/hero2.jpg);
 		}
 
 		&__3 {
@@ -52,7 +55,7 @@ section.nieuws {
 					rgba(153, 153, 153, 0) 40%,
 					rgba(0, 0, 0, 0.81) 100%
 				),
-				url(../../assets/Hero/hero3.jpg);
+				url(#{imgpath}/Hero/hero3.jpg);
 		}
 
 		&__4 {
@@ -62,7 +65,7 @@ section.nieuws {
 					rgba(153, 153, 153, 0) 40%,
 					rgba(0, 0, 0, 0.81) 100%
 				),
-				url(../../assets/Hero/hero4.jpg);
+				url(#{imgpath}/Hero/hero4.jpg);
 		}
 
 		&__5 {
@@ -72,7 +75,7 @@ section.nieuws {
 					rgba(153, 153, 153, 0) 40%,
 					rgba(0, 0, 0, 0.81) 100%
 				),
-				url(../../assets/Hero/hero5.jpg);
+				url(#{imgpath}/Hero/hero5.jpg);
 		}
 
 		&__content {
