@@ -1,0 +1,44 @@
+//! GEBRUIKERS
+section.gebruikers {
+	.col {
+		color: var(--color-white);
+		min-height: 400px;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+
+		transition: all 0.5s ease;
+
+		&:hover {
+			transform: scale(1.01);
+			z-index: 2;
+			border-radius: 5px;
+		}
+
+		h1 {
+			font-size: 65px;
+			margin-top: 40px;
+			font-weight: 700;
+		}
+
+		img {
+			height: 250px;
+			margin: 40px 0;
+			width: 100%;
+		}
+	}
+
+	.col1 {
+		background-color: var(--licht-groen);
+	}
+
+	.col2 {
+		background-color: var(--donker-groen);
+	}
+
+	.col3 {
+		background-color: var(--aqua);
+	}
+}

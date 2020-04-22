@@ -1,0 +1,49 @@
+//! HEADER
+header {
+	color: var(--color-white);
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	height: 70vh;
+	background-image: url(/Assets/Hero/hero-eigenaar.png);
+	background-size: cover;
+	background-position: center;
+
+	.header-content {
+		display: flex;
+		align-items: center;
+		height: 100vh;
+		width: 100%;
+		margin-left: 10%;
+		margin-bottom: 200px;
+		
+		.tekst {
+			margin-bottom: 10%;
+		}
+
+		h1,
+		h3 {
+			text-align: left;
+			font-weight: bold;
+		}
+
+		h1 {
+			color: var(--color-white);
+			font-size: 110px;
+			margin-bottom: 30px;
+		}
+
+		h3 {
+			margin-bottom: 30px;
+			font-size: 50px;
+		}
+
+		img {
+			width: 70%;
+			margin-bottom: 20%;
+		}
+	}
+}

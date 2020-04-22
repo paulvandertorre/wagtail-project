@@ -1,0 +1,44 @@
+//! FOOTER MENU
+section.footer-menu {
+	padding: 2em 11% 0 11%;
+	background-color: var(--oranje);
+	color: var(--color-white);
+
+	.title {
+		font-size: 30px;
+		font-weight: bold;
+	}
+
+	p {
+		font-size: 25px;
+	}
+
+	.rij {
+		display: flex;
+		justify-content: space-between;
+
+		img {
+			margin-right: 120px;
+			transform: scale(2);
+		}
+	}
+
+	.social {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 30px;
+		img {
+			margin-right: 10px;
+			transform: scale(1.5);
+		}
+	}
+
+	.logo-arnhemaan-img {
+		margin-bottom: 20px;
+		width: 100%;
+	}
+
+	.logo-energieloket-img {
+		width: 100%;
+	}
+}

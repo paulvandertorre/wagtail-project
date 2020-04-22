@@ -1,0 +1,87 @@
+//! GEBRUIKERS
+section.gebruikers {
+	.col {
+		color: var(--color-white);
+		min-height: 400px;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		cursor: pointer;
+
+		transition: all 0.5s ease;
+
+		&:hover {
+			transform: scale(1.01);
+			z-index: 2;
+			border-radius: 5px;
+		}
+
+		h1 {
+			font-size: 65px;
+			margin-top: 40px;
+			font-weight: 700;
+		}
+
+		img {
+			height: 200px;
+			margin: 40px 0;
+			width: 100%;
+		}
+	}
+
+	#aan-de-slag {
+		background-color: var(--licht-groen);
+
+		&::after {
+			content: '';
+			position: absolute;
+			width: 0;
+			height: 0;
+			margin-left: -0.5em;
+			bottom: -2em;
+			left: 50%;
+			box-sizing: border-box;
+
+			border: 1em solid black;
+			border-color: var(--licht-groen);
+
+			transform-origin: 0 0;
+			transform: rotate(-45deg);
+		}
+	}
+
+	#financieel {
+		background-color: var(--donker-groen);
+
+		&::after {
+			content: '';
+			position: absolute;
+			width: 0;
+			height: 0;
+			margin-left: -0.5em;
+			bottom: -2em;
+			left: 50%;
+			box-sizing: border-box;
+
+			border: 1em solid black;
+			border-color: var(--donker-groen);
+
+			transform-origin: 0 0;
+			transform: rotate(-45deg);
+		}
+	}
+
+	.active {
+		box-shadow: 0px 3px 3px 0 rgba(0, 0, 0, 0.4);
+	}
+
+	.no-after::after {
+		content: none !important;
+	}
+
+	.do-after::after {
+		content: '' !important;
+	}
+}

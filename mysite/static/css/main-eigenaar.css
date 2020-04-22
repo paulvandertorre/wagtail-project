@@ -1,0 +1,556 @@
+@import url("https://p.typekit.net/p.css?s=1&k=moz5nqr&ht=tk&f=2032&a=5795951&app=typekit&e=css");
+/* variables */
+body {
+  --color-white: #fff;
+  --background-color-white: #fff;
+  --background-color-light: #f5fffe;
+  --oranje: #ee7c05;
+  --licht-oranje: #fcf8f2;
+  --groen-button: #3eb6b7;
+  --licht-groen: #5ecaa8;
+  --donker-groen: #069782;
+  --aqua: #01b7b7;
+}
+
+/* resets */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* main styles */
+body {
+  font-family: 'museo-slab', serif;
+  font-style: normal;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.section-title {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+/* padding wrapper en secties */
+section.diensten,
+section.initiatieven,
+section.nieuws {
+  padding: 0 40px 0 40px;
+}
+
+nav {
+  padding: 2em 7% 2em 7%;
+}
+
+section.eigenaar-content {
+  margin: 5em 5em;
+  position: relative;
+  height: 80vh;
+}
+
+section.eigenaar-content .content-links {
+  position: absolute;
+  height: 60vh;
+  top: 100px;
+  left: 0;
+  width: 60%;
+  background-color: var(--background-color-light);
+  z-index: 300;
+  padding: 30px;
+}
+
+section.eigenaar-content .content-links h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+section.eigenaar-content .content-links p {
+  font-size: 35px;
+  margin-top: 30px;
+}
+
+section.eigenaar-content .afbeelding {
+  position: absolute;
+  top: 0;
+  left: 30%;
+  background-image: url(/Assets/Hero/hero.jpg);
+  height: 80vh;
+  width: 70%;
+  background-position: -800px -650px;
+}
+
+section.diensten {
+  background-color: var(--background-color-light);
+}
+
+section.diensten .diensten-title {
+  margin: 2em auto;
+}
+
+section.diensten .diensten-wrapper .dienst {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 220px;
+  width: 220px;
+  margin: 0 20px;
+  background-color: var(--oranje);
+  color: var(--color-white);
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  text-align: center;
+}
+
+section.diensten .diensten-wrapper .dienst:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  z-index: 2;
+}
+
+section.diensten .diensten-wrapper .dienst p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+section.diensten .diensten-wrapper .dienst1 {
+  margin-left: auto;
+}
+
+section.footer-menu {
+  padding: 2em 11% 0 11%;
+  background-color: var(--oranje);
+  color: var(--color-white);
+}
+
+section.footer-menu .title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+section.footer-menu p {
+  font-size: 25px;
+}
+
+section.footer-menu .rij {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.footer-menu .rij img {
+  margin-right: 120px;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+section.footer-menu .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+section.footer-menu .social img {
+  margin-right: 10px;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+section.footer-menu .logo-arnhemaan-img {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+section.footer-menu .logo-energieloket-img {
+  width: 100%;
+}
+
+footer {
+  background-color: var(--groen-button);
+}
+
+footer .footer {
+  padding: 2em 11% 1em 11%;
+  color: var(--color-white);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .footer p {
+  font-size: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  .shadow {
+    display: none;
+  }
+  .container-fluid {
+    padding: 0 !important;
+  }
+  nav {
+    display: none;
+  }
+  section.diensten .diensten-title {
+    margin: 50px auto;
+  }
+  section.diensten .dienst {
+    margin-bottom: 20px !important;
+  }
+  section.initiatieven {
+    padding: 0;
+  }
+}
+
+section.gebruikers .col {
+  color: var(--color-white);
+  min-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+section.gebruikers .col:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  z-index: 2;
+  border-radius: 5px;
+}
+
+section.gebruikers .col h1 {
+  font-size: 65px;
+  margin-top: 40px;
+  font-weight: 700;
+}
+
+section.gebruikers .col img {
+  height: 200px;
+  margin: 40px 0;
+  width: 100%;
+}
+
+section.gebruikers #aan-de-slag {
+  background-color: var(--licht-groen);
+}
+
+section.gebruikers #aan-de-slag::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin-left: -0.5em;
+  bottom: -2em;
+  left: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1em solid black;
+  border-color: var(--licht-groen);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+section.gebruikers #financieel {
+  background-color: var(--donker-groen);
+}
+
+section.gebruikers #financieel::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin-left: -0.5em;
+  bottom: -2em;
+  left: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1em solid black;
+  border-color: var(--donker-groen);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+section.gebruikers .active {
+  -webkit-box-shadow: 0px 3px 3px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 3px 3px 0 rgba(0, 0, 0, 0.4);
+}
+
+section.gebruikers .no-after::after {
+  content: none !important;
+}
+
+section.gebruikers .do-after::after {
+  content: '' !important;
+}
+
+header {
+  color: var(--color-white);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  height: 70vh;
+  background-image: url(/Assets/Hero/hero-eigenaar.png);
+  background-size: cover;
+  background-position: center;
+}
+
+header .header-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100%;
+  margin-left: 10%;
+  margin-bottom: 200px;
+}
+
+header .header-content .tekst {
+  margin-bottom: 10%;
+}
+
+header .header-content h1,
+header .header-content h3 {
+  text-align: left;
+  font-weight: bold;
+}
+
+header .header-content h1 {
+  color: var(--color-white);
+  font-size: 110px;
+  margin-bottom: 30px;
+}
+
+header .header-content h3 {
+  margin-bottom: 30px;
+  font-size: 50px;
+}
+
+header .header-content img {
+  width: 70%;
+  margin-bottom: 20%;
+}
+
+section.initiatieven {
+  margin: 2em 0;
+}
+
+section.initiatieven .initiatief {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  margin: 0 20px;
+}
+
+section.initiatieven .initiatief img {
+  width: 100%;
+}
+
+section.initiatieven .initiatief .subtitle {
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 30px 0 5px 30px;
+}
+
+section.initiatieven .initiatief .title {
+  font-weight: bold;
+  font-size: 35px;
+  padding: 10px 30px;
+}
+
+section.initiatieven .initiatief p {
+  font-size: 30px;
+  padding: 5px 0 5px 30px;
+  max-width: 70%;
+}
+
+section.initiatieven .initiatief .initiatief-button {
+  display: inline-block;
+  width: 250px;
+  text-align: center;
+  background-color: transparent;
+  padding: 15px;
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 500px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+section.initiatieven .initiatief1 {
+  background-color: var(--background-color-light);
+}
+
+section.initiatieven .initiatief1 .initiatief-button {
+  color: var(--groen-button);
+  border: 3px solid var(--groen-button);
+}
+
+section.initiatieven .initiatief2 {
+  background-color: var(--licht-oranje);
+}
+
+section.initiatieven .initiatief2 .initiatief-button {
+  color: var(--oranje);
+  border: 3px solid var(--oranje);
+}
+
+section.initiatieven .initiatief3 {
+  background-color: var(--background-color-light);
+}
+
+section.initiatieven .initiatief3 .initiatief-button {
+  color: var(--groen-button);
+  border: 3px solid var(--groen-button);
+}
+
+.shadow {
+  position: absolute;
+  z-index: 1000;
+  left: 0;
+  width: 100%;
+  height: 70vh;
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.81)), color-stop(40%, rgba(153, 153, 153, 0)), to(rgba(229, 229, 229, 0)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.81) 0%, rgba(153, 153, 153, 0) 40%, rgba(229, 229, 229, 0) 100%);
+}
+
+.navbar-fixed-top {
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 2000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--color-white);
+}
+
+nav .nav-logo {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+nav .nav-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 30px;
+}
+
+nav .nav-items ul,
+nav .nav-items .accessoires {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold;
+}
+
+nav .nav-items ul li,
+nav .nav-items .accessoires li {
+  list-style: none;
+  margin: 0 40px;
+  padding: 20px 30px;
+  cursor: pointer;
+}
+
+nav .nav-items ul li:hover,
+nav .nav-items .accessoires li:hover {
+  background-color: var(--color-white);
+  color: var(--groen-button);
+  border-radius: 500px;
+}
+
+nav .nav-items ul .magnify,
+nav .nav-items .accessoires .magnify {
+  margin-right: 50px;
+}
+
+nav .nav-items .accessoires {
+  padding: 20px 30px;
+}
+/*# sourceMappingURL=main-eigenaar.css.map */

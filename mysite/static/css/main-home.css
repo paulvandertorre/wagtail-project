@@ -1,0 +1,1076 @@
+@import url("https://p.typekit.net/p.css?s=1&k=moz5nqr&ht=tk&f=2032&a=5795951&app=typekit&e=css");
+/* variables */
+body {
+  --color-white: #fff;
+  --background-color-white: #fff;
+  --background-color-light: #f5fffe;
+  --oranje: #ee7c05;
+  --licht-oranje: #fcf8f2;
+  --groen-button: #3eb6b7;
+  --licht-groen: #5ecaa8;
+  --donker-groen: #069782;
+  --aqua: #01b7b7;
+}
+
+/* resets */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* main styles */
+body {
+  font-family: 'museo-slab', serif;
+  font-style: normal;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.section-title {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+/* padding wrapper en secties */
+section.diensten,
+section.initiatieven,
+section.nieuws {
+  padding: 0 9%;
+}
+
+nav {
+  padding: 2em 7% 2em 7%;
+}
+
+@media screen and (max-width: 768px) {
+  .shadow {
+    display: none;
+  }
+  .container-fluid {
+    padding: 0 !important;
+  }
+}
+
+section.diensten {
+  background-color: var(--background-color-light);
+}
+
+section.diensten .diensten-title {
+  text-align: center;
+  margin: 1em 0 2em 0;
+}
+
+section.diensten .diensten-wrapper .dienst {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 220px;
+  width: 220px;
+  margin: 0 20px;
+  background-color: var(--oranje);
+  color: var(--color-white);
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  text-align: center;
+}
+
+section.diensten .diensten-wrapper .dienst:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  z-index: 2;
+}
+
+section.diensten .diensten-wrapper .dienst p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  section.diensten .diensten-title {
+    margin: 50px auto;
+  }
+  section.diensten .dienst {
+    margin-bottom: 20px !important;
+  }
+}
+
+section.footer-menu {
+  padding: 2em 11% 0 11%;
+  background-color: var(--oranje);
+  color: var(--color-white);
+}
+
+section.footer-menu .title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+section.footer-menu p {
+  font-size: 25px;
+}
+
+section.footer-menu .rij {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.footer-menu .rij img {
+  margin-right: 120px;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+section.footer-menu .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+section.footer-menu .social img {
+  margin-right: 10px;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+section.footer-menu .logo-arnhemaan-img {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+section.footer-menu .logo-energieloket-img {
+  width: 100%;
+}
+
+footer {
+  background-color: var(--groen-button);
+}
+
+footer .footer {
+  padding: 2em 11% 1em 11%;
+  color: var(--color-white);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .footer p {
+  font-size: 25px;
+}
+
+section.gebruikers .col {
+  color: var(--color-white);
+  min-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+section.gebruikers .col:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  z-index: 2;
+  border-radius: 5px;
+}
+
+section.gebruikers .col h1 {
+  font-size: 65px;
+  margin-top: 40px;
+  font-weight: 700;
+}
+
+section.gebruikers .col img {
+  height: 250px;
+  margin: 40px 0;
+  width: 100%;
+}
+
+section.gebruikers .col1 {
+  background-color: var(--licht-groen);
+}
+
+section.gebruikers .col2 {
+  background-color: var(--donker-groen);
+}
+
+section.gebruikers .col3 {
+  background-color: var(--aqua);
+}
+
+header {
+  color: var(--color-white);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .carousel {
+  position: relative;
+}
+
+header .carousel img {
+  width: 100%;
+  height: 80vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+header .carousel .carousel-caption {
+  left: 11%;
+  margin-bottom: 200px;
+}
+
+header .carousel .carousel-caption h1,
+header .carousel .carousel-caption h3,
+header .carousel .carousel-caption p {
+  text-align: left;
+  font-weight: bold;
+}
+
+header .carousel .carousel-caption h1 {
+  color: var(--color-white);
+  font-size: 90px;
+  margin-bottom: 30px;
+  max-width: 60%;
+}
+
+header .carousel .carousel-caption h3 {
+  margin-bottom: 30px;
+  font-size: 50px;
+}
+
+header .carousel .carousel-caption p {
+  position: absolute;
+  color: #000;
+  background-color: var(--background-color-white);
+  padding: 20px 30px;
+  font-size: 30px;
+  border-radius: 500px;
+}
+
+header .carousel .carousel-caption a {
+  z-index: 15000;
+}
+
+header .carousel .carousel-indicators {
+  z-index: 1400;
+}
+
+header .carousel .carousel-indicators li {
+  width: 0.625rem;
+  height: 0.625rem;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+header .hero-tekst {
+  padding-bottom: 5em;
+  max-width: 1000px;
+}
+
+header .hero-tekst h1 {
+  font-size: 90px;
+  font-weight: bold;
+}
+
+header .hero-tekst h3 {
+  font-size: 50px;
+}
+
+header .hero-tekst button {
+  border: none;
+  border-radius: 30px;
+  padding: 5px 20px;
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  header .carousel .carousel-caption {
+    left: 11%;
+    margin-bottom: 200px;
+  }
+  header .carousel .carousel-caption h1 {
+    font-size: 50px;
+    max-width: 100%;
+  }
+  header .carousel .carousel-caption h3 {
+    font-size: 30px;
+  }
+}
+
+section.initiatieven .initiatief {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+section.initiatieven .initiatief img {
+  width: 100%;
+}
+
+section.initiatieven .initiatief .subtitle {
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 30px 0 5px 30px;
+}
+
+section.initiatieven .initiatief .title {
+  font-weight: bold;
+  font-size: 35px;
+  padding: 10px 30px;
+}
+
+section.initiatieven .initiatief p {
+  font-size: 30px;
+  padding: 5px 0 5px 30px;
+  max-width: 70%;
+}
+
+section.initiatieven .initiatief .initiatief-button {
+  display: inline-block;
+  width: 250px;
+  text-align: center;
+  background-color: transparent;
+  padding: 15px;
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 500px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+section.initiatieven .initiatief1 {
+  background-color: var(--background-color-light);
+}
+
+section.initiatieven .initiatief1 .initiatief-button {
+  color: var(--groen-button);
+  border: 3px solid var(--groen-button);
+}
+
+section.initiatieven .initiatief2 {
+  background-color: var(--licht-oranje);
+}
+
+section.initiatieven .initiatief2 .initiatief-button {
+  color: var(--oranje);
+  border: 3px solid var(--oranje);
+}
+
+section.initiatieven .initiatief3 {
+  background-color: var(--background-color-light);
+}
+
+section.initiatieven .initiatief3 .initiatief-button {
+  color: var(--groen-button);
+  border: 3px solid var(--groen-button);
+}
+
+@media screen and (max-width: 768px) {
+  section.initiatieven {
+    padding: 0;
+  }
+}
+
+section.map {
+  position: relative;
+}
+
+section.map .map-titel {
+  padding: 0 9%;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+section.map .container-fluid {
+  padding: 0;
+}
+
+section.map #mapid {
+  height: 55vh;
+}
+
+section.map #mapid .leaflet-tile-pane {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+section.map .map-wrapper {
+  position: absolute;
+  z-index: 1000;
+  width: 600px;
+  height: 500px;
+  background-color: #fff;
+  left: 200px;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 20px;
+  cursor: initial;
+}
+
+section.map .map-wrapper .arrow-down {
+  position: absolute;
+  right: 40px;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  cursor: pointer;
+}
+
+section.map .map-wrapper .map-wrapper-content {
+  padding: 3em;
+}
+
+section.map .map-wrapper .map-wrapper-content h1 {
+  color: var(--groen-button);
+}
+
+section.map .map-wrapper .map-wrapper-content .groene-cirkel,
+section.map .map-wrapper .map-wrapper-content .oranje-cirkel {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+section.map .map-wrapper .map-wrapper-content .iniatief-ondernemersinitiatief,
+section.map .map-wrapper .map-wrapper-content .initiatief-wijkinitiatief {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.map .map-wrapper .map-wrapper-content .groene-cirkel {
+  background-color: var(--groen-button);
+}
+
+section.map .map-wrapper .map-wrapper-content .oranje-cirkel {
+  background-color: var(--oranje);
+}
+
+section.map .map-wrapper .legenda {
+  background-color: var(--groen-button);
+  color: #fff;
+  height: 80px;
+  padding: 30px 3em;
+}
+
+@media screen and (max-width: 768px) {
+  section.map .map-wrapper {
+    display: none;
+  }
+}
+
+.shadow {
+  position: absolute;
+  z-index: 1000;
+  left: 0;
+  width: 100%;
+  height: 80vh;
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.81)), color-stop(40%, rgba(153, 153, 153, 0)), to(rgba(229, 229, 229, 0)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.81) 0%, rgba(153, 153, 153, 0) 40%, rgba(229, 229, 229, 0) 100%);
+}
+
+.navbar-fixed-top {
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 2000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--color-white);
+}
+
+nav .nav-logo {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+nav .nav-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 30px;
+}
+
+nav .nav-items ul,
+nav .nav-items .accessoires {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold;
+}
+
+nav .nav-items ul li,
+nav .nav-items .accessoires li {
+  list-style: none;
+  margin: 0 40px;
+  padding: 20px 30px;
+  cursor: pointer;
+}
+
+nav .nav-items ul li:hover,
+nav .nav-items .accessoires li:hover {
+  background-color: var(--color-white);
+  color: var(--groen-button);
+  border-radius: 500px;
+}
+
+nav .nav-items ul .magnify,
+nav .nav-items .accessoires .magnify {
+  margin-right: 50px;
+}
+
+nav .nav-items .accessoires {
+  padding: 20px 30px;
+}
+
+nav .nav-toggle {
+  cursor: pointer;
+}
+
+nav .nav-toggle .bars {
+  background: var(--color-white);
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  width: 22px;
+}
+
+nav .nav-toggle .bars::before, nav .nav-toggle .bars::after {
+  background: var(--color-white);
+  display: inline-block;
+  height: 2px;
+  position: absolute;
+  content: '';
+  width: 22px;
+}
+
+nav .nav-toggle .bars::before {
+  top: 8px;
+}
+
+nav .nav-toggle .bars::after {
+  top: -8px;
+}
+
+@media screen and (max-width: 2100px) {
+  nav {
+    position: fixed;
+    width: 100%;
+    z-index: 2000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: var(--color-white);
+  }
+  nav .nav-logo {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  nav .nav-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 20px;
+  }
+  nav .nav-items ul,
+  nav .nav-items .accessoires {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-weight: bold;
+  }
+  nav .nav-items ul li,
+  nav .nav-items .accessoires li {
+    list-style: none;
+    margin: 0 40px;
+    padding: 20px 30px;
+    cursor: pointer;
+  }
+  nav .nav-items ul li:hover,
+  nav .nav-items .accessoires li:hover {
+    background-color: var(--color-white);
+    color: var(--groen-button);
+    border-radius: 500px;
+  }
+  nav .nav-items ul .magnify,
+  nav .nav-items .accessoires .magnify {
+    margin-right: 50px;
+  }
+  nav .nav-items .accessoires {
+    padding: 20px 30px;
+  }
+}
+
+section.nieuws {
+  position: relative;
+}
+
+section.nieuws .slick-prev,
+section.nieuws .slick-next {
+  position: absolute;
+}
+
+section.nieuws .slick-prev {
+  left: 200px;
+  z-index: 200;
+}
+
+section.nieuws .slick-next {
+  right: 200px;
+  z-index: 200;
+}
+
+section.nieuws .nieuws-item {
+  height: 700px;
+  margin: 10px;
+  background-size: cover;
+  background-position: center;
+}
+
+section.nieuws .nieuws-item__1 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(229, 229, 229, 0)), color-stop(40%, rgba(153, 153, 153, 0)), to(rgba(0, 0, 0, 0.81))), url(../../assets/Nieuws/vrouw-met-bloemen.jpg);
+  background-image: linear-gradient(to bottom, rgba(229, 229, 229, 0) 0%, rgba(153, 153, 153, 0) 40%, rgba(0, 0, 0, 0.81) 100%), url(../../assets/Nieuws/vrouw-met-bloemen.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+section.nieuws .nieuws-item__2 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(229, 229, 229, 0)), color-stop(40%, rgba(153, 153, 153, 0)), to(rgba(0, 0, 0, 0.81))), url(../../assets/Hero/hero2.jpg);
+  background-image: linear-gradient(to bottom, rgba(229, 229, 229, 0) 0%, rgba(153, 153, 153, 0) 40%, rgba(0, 0, 0, 0.81) 100%), url(../../assets/Hero/hero2.jpg);
+}
+
+section.nieuws .nieuws-item__3 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(229, 229, 229, 0)), color-stop(40%, rgba(153, 153, 153, 0)), to(rgba(0, 0, 0, 0.81))), url(../../assets/Hero/hero3.jpg);
+  background-image: linear-gradient(to bottom, rgba(229, 229, 229, 0) 0%, rgba(153, 153, 153, 0) 40%, rgba(0, 0, 0, 0.81) 100%), url(../../assets/Hero/hero3.jpg);
+}
+
+section.nieuws .nieuws-item__4 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(229, 229, 229, 0)), color-stop(40%, rgba(153, 153, 153, 0)), to(rgba(0, 0, 0, 0.81))), url(../../assets/Hero/hero4.jpg);
+  background-image: linear-gradient(to bottom, rgba(229, 229, 229, 0) 0%, rgba(153, 153, 153, 0) 40%, rgba(0, 0, 0, 0.81) 100%), url(../../assets/Hero/hero4.jpg);
+}
+
+section.nieuws .nieuws-item__5 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(229, 229, 229, 0)), color-stop(40%, rgba(153, 153, 153, 0)), to(rgba(0, 0, 0, 0.81))), url(../../assets/Hero/hero5.jpg);
+  background-image: linear-gradient(to bottom, rgba(229, 229, 229, 0) 0%, rgba(153, 153, 153, 0) 40%, rgba(0, 0, 0, 0.81) 100%), url(../../assets/Hero/hero5.jpg);
+}
+
+section.nieuws .nieuws-item__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 4em;
+  color: var(--color-white);
+}
+
+section.nieuws .nieuws-item__content .content__boventitel {
+  font-size: 30px;
+  text-shadow: 0px 1px 5px #000000;
+}
+
+section.nieuws .nieuws-item__content .content__inhoud {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.nieuws .nieuws-item__content .content__inhoud .titel-en-tekst {
+  width: auto;
+}
+
+section.nieuws .nieuws-item__content .content__inhoud .titel-en-tekst h1 {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+section.nieuws .nieuws-item__content .content__inhoud .titel-en-tekst .tekst {
+  width: 60%;
+  font-size: 30px;
+}
+
+section.nieuws .nieuws-item__content .nieuws-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 200px;
+  border: none;
+  border-radius: 30px;
+  padding: 5px 20px;
+  font-size: 25px;
+  margin-top: 120px;
+  background-color: var(--oranje);
+  display: inline-block;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  section.nieuws {
+    margin: 0;
+  }
+  section.nieuws .slick-prev,
+  section.nieuws .slick-next {
+    display: none !important;
+  }
+  section.nieuws .nieuws-item__content .content__inhoud {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.nieuws .nieuws-item__content .content__inhoud h1 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  section.nieuws .nieuws-item__content .content__inhoud .tekst {
+    width: 100%;
+    font-size: 18px;
+  }
+  section.nieuws .nieuws-item__content .nieuws-button {
+    border: none;
+    border-radius: 30px;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    background-color: var(--color-white);
+    color: #000;
+    display: inline-block;
+    justify-self: flex-end;
+  }
+}
+
+@media screen and (max-width: 1800px) {
+  section.nieuws {
+    position: relative;
+  }
+  section.nieuws .slick-prev,
+  section.nieuws .slick-next {
+    position: absolute;
+  }
+  section.nieuws .slick-prev {
+    left: 200px;
+    z-index: 200;
+  }
+  section.nieuws .slick-next {
+    right: 200px;
+    z-index: 200;
+  }
+  section.nieuws .nieuws-item {
+    height: 700px;
+    margin: 10px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  section.nieuws .nieuws-item__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 4em;
+    color: var(--color-white);
+  }
+  section.nieuws .nieuws-item__content .content__boventitel {
+    font-size: 30px;
+    text-shadow: 0px 1px 5px #000000;
+  }
+  section.nieuws .nieuws-item__content .content__inhoud {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  section.nieuws .nieuws-item__content .content__inhoud .titel-en-tekst {
+    width: auto;
+  }
+  section.nieuws .nieuws-item__content .content__inhoud .titel-en-tekst h1 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  section.nieuws .nieuws-item__content .content__inhoud .titel-en-tekst .tekst {
+    width: 60%;
+    font-size: 20px;
+  }
+  section.nieuws .nieuws-item__content .nieuws-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 200px;
+    border: none;
+    border-radius: 30px;
+    padding: 5px 20px;
+    font-size: 25px;
+    margin-top: 120px;
+    background-color: var(--oranje);
+    color: var(--color-white);
+    display: inline-block;
+    text-align: center;
+  }
+}
+
+section.nieuwsbrief {
+  background-color: var(--background-color-light);
+  position: relative;
+  padding: 6em 0;
+}
+
+section.nieuwsbrief .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.nieuwsbrief .col .title {
+  color: var(--groen-button);
+  font-size: 65px;
+  margin-bottom: 1.5em;
+  font-weight: bold;
+}
+
+section.nieuwsbrief .col .formulier {
+  display: block;
+}
+
+section.nieuwsbrief .col .formulier input {
+  padding: 20px;
+  width: 800px;
+  border-radius: 500px;
+  border: 3px solid var(--groen-button);
+  color: var(--groen-button);
+  font-size: 20px;
+}
+
+section.nieuwsbrief .col .formulier .nieuwsbrief-btn {
+  background-color: var(--groen-button);
+  color: var(--color-white);
+  font-weight: bold;
+  padding: 10px 20px;
+  font-size: 30px;
+  border: none;
+  border-radius: 500px;
+  margin-left: 30px;
+}
+
+section.nieuwsbrief .afbeelding-rechts {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+section.nieuwsbrief .afbeelding-links {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+@media screen and (max-width: 1200px) {
+  section.nieuwsbrief {
+    background-color: var(--background-color-light);
+    position: relative;
+    padding: 6em 0;
+  }
+  section.nieuwsbrief .col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.nieuwsbrief .col .title {
+    color: var(--groen-button);
+    font-size: 65px;
+    margin-bottom: 1.5em;
+    font-weight: bold;
+  }
+  section.nieuwsbrief .col .formulier form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.nieuwsbrief .col .formulier input {
+    padding: 20px;
+    width: 300px;
+    border-radius: 500px;
+    border: 3px solid var(--groen-button);
+    color: var(--groen-button);
+    font-size: 20px;
+    margin-bottom: 2em;
+  }
+  section.nieuwsbrief .col .formulier .nieuwsbrief-btn {
+    background-color: var(--groen-button);
+    color: var(--color-white);
+    font-weight: bold;
+    padding: 10px 20px;
+    font-size: 30px;
+    border: none;
+    border-radius: 500px;
+    margin-left: 0;
+  }
+  section.nieuwsbrief .afbeelding-rechts {
+    position: absolute;
+    right: 0;
+    top: 85%;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  section.nieuwsbrief .afbeelding-links {
+    position: absolute;
+    left: 0;
+    top: 85%;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+/*# sourceMappingURL=main-home.css.map */

@@ -1,0 +1,251 @@
+//! NIEUWS
+section.nieuws {
+	position: relative;
+
+	.slick-prev,
+	.slick-next {
+		position: absolute;
+	}
+
+	.slick-prev {
+		left: 200px;
+		z-index: 200;
+	}
+
+	.slick-next {
+		right: 200px;
+		z-index: 200;
+	}
+
+	.nieuws-item {
+		height: 700px;
+		margin: 10px;
+		background-size: cover;
+		background-position: center;
+
+		&__1 {
+			background-image: linear-gradient(
+					to bottom,
+					rgba(229, 229, 229, 0) 0%,
+					rgba(153, 153, 153, 0) 40%,
+					rgba(0, 0, 0, 0.81) 100%
+				),
+				url(../../assets/Nieuws/vrouw-met-bloemen.jpg);
+			background-size: cover;
+			background-position: center;
+		}
+
+		&__2 {
+			background-image: linear-gradient(
+					to bottom,
+					rgba(229, 229, 229, 0) 0%,
+					rgba(153, 153, 153, 0) 40%,
+					rgba(0, 0, 0, 0.81) 100%
+				),
+				url(../../assets/Hero/hero2.jpg);
+		}
+
+		&__3 {
+			background-image: linear-gradient(
+					to bottom,
+					rgba(229, 229, 229, 0) 0%,
+					rgba(153, 153, 153, 0) 40%,
+					rgba(0, 0, 0, 0.81) 100%
+				),
+				url(../../assets/Hero/hero3.jpg);
+		}
+
+		&__4 {
+			background-image: linear-gradient(
+					to bottom,
+					rgba(229, 229, 229, 0) 0%,
+					rgba(153, 153, 153, 0) 40%,
+					rgba(0, 0, 0, 0.81) 100%
+				),
+				url(../../assets/Hero/hero4.jpg);
+		}
+
+		&__5 {
+			background-image: linear-gradient(
+					to bottom,
+					rgba(229, 229, 229, 0) 0%,
+					rgba(153, 153, 153, 0) 40%,
+					rgba(0, 0, 0, 0.81) 100%
+				),
+				url(../../assets/Hero/hero5.jpg);
+		}
+
+		&__content {
+			display: flex;
+			height: 100%;
+			width: 100%;
+			flex-direction: column;
+			justify-content: space-between;
+			padding: 4em;
+			color: var(--color-white);
+
+			.content__boventitel {
+				font-size: 30px;
+				text-shadow: 0px 1px 5px #000000;
+			}
+
+			.content__inhoud {
+				display: flex;
+				justify-content: space-between;
+
+				.titel-en-tekst {
+					width: auto;
+
+					h1 {
+						font-size: 60px;
+						font-weight: bold;
+					}
+
+					.tekst {
+						width: 60%;
+						font-size: 30px;
+					}
+				}
+			}
+
+			.nieuws-button {
+				display: flex;
+				width: 200px;
+				border: none;
+				border-radius: 30px;
+				padding: 5px 20px;
+				font-size: 25px;
+				margin-top: 120px;
+				background-color: var(--oranje);
+				display: inline-block;
+				text-align: center;
+			}
+		}
+	}
+}
+
+
+
+
+// MEDIA QUERIES
+@media screen and(max-width: 768px) {
+
+	section.nieuws {
+		margin: 0;
+
+		.slick-prev,
+		.slick-next {
+			display: none !important;
+		}
+
+		.nieuws-item {
+			&__content {
+				.content__inhoud {
+					display: flex;
+					justify-content: space-between;
+					flex-direction: column;
+
+					h1 {
+						font-size: 30px;
+						font-weight: bold;
+					}
+
+					.tekst {
+						width: 100%;
+						font-size: 18px;
+					}
+				}
+
+				.nieuws-button {
+					border: none;
+					border-radius: 30px;
+					padding: 15px;
+					font-size: 18px;
+					font-weight: bold;
+					margin-top: 20px;
+					background-color: var(--color-white);
+					color: #000;
+					display: inline-block;
+					justify-self: flex-end;
+				}
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width: 1800px) {
+	section.nieuws {
+		position: relative;
+	
+		.slick-prev,
+		.slick-next {
+			position: absolute;
+		}
+	
+		.slick-prev {
+			left: 200px;
+			z-index: 200;
+		}
+	
+		.slick-next {
+			right: 200px;
+			z-index: 200;
+		}
+	
+		.nieuws-item {
+			height: 700px;
+			margin: 10px;
+			background-size: cover;
+			background-position: center;
+	
+			&__content {
+				display: flex;
+				height: 100%;
+				width: 100%;
+				flex-direction: column;
+				justify-content: space-between;
+				padding: 4em;
+				color: var(--color-white);
+	
+				.content__boventitel {
+					font-size: 30px;
+					text-shadow: 0px 1px 5px #000000;
+				}
+	
+				.content__inhoud {
+					display: flex;
+					justify-content: space-between;
+	
+					.titel-en-tekst {
+						width: auto;
+	
+						h1 {
+							font-size: 30px;
+							font-weight: bold;
+						}
+	
+						.tekst {
+							width: 60%;
+							font-size: 20px;
+						}
+					}
+				}
+	
+				.nieuws-button {
+					display: flex;
+					width: 200px;
+					border: none;
+					border-radius: 30px;
+					padding: 5px 20px;
+					font-size: 25px;
+					margin-top: 120px;
+					background-color: var(--oranje);
+					color: var(--color-white);
+					display: inline-block;
+					text-align: center;
+				}
+			}
+		}
+	}
+}

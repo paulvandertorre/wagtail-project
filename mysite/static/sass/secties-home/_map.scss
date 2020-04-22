@@ -1,0 +1,95 @@
+//! MAP
+section.map {
+	position: relative;
+
+	.map-titel {
+		padding: 0 9%;
+		font-weight: bold;
+		margin-bottom: 1em;
+	}
+
+	.container-fluid {
+		padding: 0;
+	}
+
+	#mapid {
+		height: 55vh;
+
+		.leaflet-tile-pane {
+			-webkit-filter: grayscale(100%);
+			filter: grayscale(100%);
+		}
+	}
+
+	.map-wrapper {
+		position: absolute;
+		z-index: 1000;
+		width: 600px;
+		height: 500px;
+		background-color: #fff;
+		left: 200px;
+		bottom: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		font-size: 20px;
+		cursor: initial;
+
+		.arrow-down {
+			position: absolute;
+			right: 40px;
+			transform: scale(2);
+			cursor: pointer;
+		}
+
+		.map-wrapper-content {
+			padding: 3em;
+
+			h1 {
+				color: var(--groen-button);
+			}
+
+			.groene-cirkel,
+			.oranje-cirkel {
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				margin-right: 20px;
+				margin-bottom: 20px;
+			}
+
+			.iniatief-ondernemersinitiatief,
+			.initiatief-wijkinitiatief {
+				display: flex;
+				align-items: center;
+			}
+
+			.groene-cirkel {
+				background-color: var(--groen-button);
+			}
+
+			.oranje-cirkel {
+				background-color: var(--oranje);
+			}
+		}
+
+		.legenda {
+			background-color: var(--groen-button);
+			color: #fff;
+			height: 80px;
+			padding: 30px 3em;
+		}
+	}
+}
+
+
+
+
+// MEDIA QUERIES
+@media screen and(max-width: 768px) {
+	section.map {
+		.map-wrapper {
+			display: none;
+		}
+	}
+}

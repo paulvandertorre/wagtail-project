@@ -1,0 +1,37 @@
+//! EIGENAAR CONTENT
+section.eigenaar-content {
+	margin: 5em 5em;
+	position: relative;
+	height: 80vh;
+
+	.content-links {
+		position: absolute;
+		height: 60vh;
+		top: 100px;
+		left: 0;
+		width: 60%;
+		background-color: var(--background-color-light);
+		z-index: 300;
+		padding: 30px;
+
+		h1 {
+			font-size: 50px;
+			font-weight: bold;
+		}
+
+		p {
+			font-size: 35px;
+			margin-top: 30px;
+		}
+	}
+
+	.afbeelding {
+		position: absolute;
+		top: 0;
+		left: 30%;
+		background-image: url(/Assets/Hero/hero.jpg);
+		height: 80vh;
+		width: 70%;
+		background-position: -800px -650px;
+	}
+}

@@ -1,0 +1,124 @@
+//! NIEUWSBRIEF
+section.nieuwsbrief {
+	background-color: var(--background-color-light);
+	position: relative;
+	padding: 6em 0;
+
+	.col {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.title {
+			color: var(--groen-button);
+			font-size: 65px;
+			margin-bottom: 1.5em;
+			font-weight: bold;
+		}
+
+		.formulier {
+			display: block;
+
+			input {
+				padding: 20px;
+				width: 800px;
+				border-radius: 500px;
+				border: 3px solid var(--groen-button);
+				color: var(--groen-button);
+				font-size: 20px;
+			}
+
+			.nieuwsbrief-btn {
+				background-color: var(--groen-button);
+				color: var(--color-white);
+				font-weight: bold;
+				padding: 10px 20px;
+				font-size: 30px;
+				border: none;
+				border-radius: 500px;
+				margin-left: 30px;
+			}
+		}
+	}
+
+	.afbeelding-rechts {
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform: scale(2);
+	}
+
+	.afbeelding-links {
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: scale(2);
+	}
+}
+
+
+// MEDIA QUERIES
+@media screen and (max-width: 1200px) {
+
+	section.nieuwsbrief {
+		background-color: var(--background-color-light);
+		position: relative;
+		padding: 6em 0;
+	
+		.col {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+	
+			.title {
+				color: var(--groen-button);
+				font-size: 65px;
+				margin-bottom: 1.5em;
+				font-weight: bold;
+			}
+	
+			.formulier {
+
+				form {
+					display: flex;
+					flex-direction: column;
+				}
+	
+				input {
+					padding: 20px;
+					width: 300px;
+					border-radius: 500px;
+					border: 3px solid var(--groen-button);
+					color: var(--groen-button);
+					font-size: 20px;
+					margin-bottom: 2em;
+				}
+	
+				.nieuwsbrief-btn {
+					background-color: var(--groen-button);
+					color: var(--color-white);
+					font-weight: bold;
+					padding: 10px 20px;
+					font-size: 30px;
+					border: none;
+					border-radius: 500px;
+					margin-left: 0;
+				}
+			}
+		}
+	
+		.afbeelding-rechts {
+			position: absolute;
+			right: 0;
+			top: 85%;
+			transform: scale(1);
+		}
+	
+		.afbeelding-links {
+			position: absolute;
+			left: 0;
+			top: 85%;
+			transform: scale(1);
+		}
+	}
+}
