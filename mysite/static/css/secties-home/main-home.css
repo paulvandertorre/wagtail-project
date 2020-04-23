@@ -1,36 +1,3 @@
-section.diensten {
-  background-color: var(--background-color-light); }
-  section.diensten .diensten-title {
-    text-align: center;
-    margin: 1em 0 2em 0; }
-  section.diensten .diensten-wrapper .dienst {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 220px;
-    width: 220px;
-    margin: 0 20px;
-    background-color: var(--oranje);
-    color: var(--color-white);
-    border-radius: 50%;
-    cursor: pointer;
-    transition: all 0.5s ease;
-    text-align: center; }
-    section.diensten .diensten-wrapper .dienst:hover {
-      transform: scale(1.1);
-      z-index: 2; }
-    section.diensten .diensten-wrapper .dienst p {
-      font-size: 20px;
-      font-weight: bold;
-      margin-top: 10px; }
-
-@media screen and (max-width: 768px) {
-  section.diensten .diensten-title {
-    margin: 50px auto; }
-  section.diensten .dienst {
-    margin-bottom: 20px !important; } }
-
 section.gebruikers .col {
   color: var(--color-white);
   min-height: 400px;
@@ -378,19 +345,19 @@ section.nieuwsbrief {
     background-color: var(--background-color-light);
     position: relative;
     padding: 6em 0; }
-    section.nieuwsbrief .col {
+    section.nieuwsbrief .row .col {
       display: flex;
       flex-direction: column;
       align-items: center; }
-      section.nieuwsbrief .col .title {
+      section.nieuwsbrief .row .col .title {
         color: var(--groen-button);
         font-size: 65px;
         margin-bottom: 1.5em;
         font-weight: bold; }
-      section.nieuwsbrief .col .formulier form {
+      section.nieuwsbrief .row .col .formulier form {
         display: flex;
         flex-direction: column; }
-      section.nieuwsbrief .col .formulier input {
+      section.nieuwsbrief .row .col .formulier input {
         padding: 20px;
         width: 300px;
         border-radius: 500px;
@@ -398,7 +365,7 @@ section.nieuwsbrief {
         color: var(--groen-button);
         font-size: 20px;
         margin-bottom: 2em; }
-      section.nieuwsbrief .col .formulier .nieuwsbrief-btn {
+      section.nieuwsbrief .row .col .formulier .nieuwsbrief-btn {
         background-color: var(--groen-button);
         color: var(--color-white);
         font-weight: bold;
@@ -407,12 +374,12 @@ section.nieuwsbrief {
         border: none;
         border-radius: 500px;
         margin-left: 0; }
-    section.nieuwsbrief .afbeelding-rechts {
+    section.nieuwsbrief .row .afbeelding-rechts {
       position: absolute;
       right: 0;
       top: 85%;
       transform: scale(1); }
-    section.nieuwsbrief .afbeelding-links {
+    section.nieuwsbrief .row .afbeelding-links {
       position: absolute;
       left: 0;
       top: 85%;

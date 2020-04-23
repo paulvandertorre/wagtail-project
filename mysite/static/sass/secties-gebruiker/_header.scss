@@ -2,7 +2,7 @@
 $imgpath: "static/assets/";
 
 //! HEADER
-header {
+gebruiker-header {
 	color: var(--color-white);
 
 	display: flex;
@@ -10,12 +10,12 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	position: relative;
-	height: 70vh;
+	height: 80vh;
 	background-image: url(#{imgpath}/Hero/hero-eigenaar.png);
 	background-size: cover;
 	background-position: center;
 
-	.header-content {
+	.gebruiker-header-content {
 		display: flex;
 		align-items: center;
 		height: 100vh;
@@ -23,7 +23,7 @@ header {
 		margin-left: 10%;
 		margin-bottom: 200px;
 		
-		.tekst {
+		.gebruiker-tekst {
 			margin-bottom: 10%;
 		}
 

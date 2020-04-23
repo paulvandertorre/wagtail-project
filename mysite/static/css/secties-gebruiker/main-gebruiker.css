@@ -1,8 +1,8 @@
-section.eigenaar-content {
+section.gebruiker-content {
   margin: 5em 5em;
   position: relative;
   height: 80vh; }
-  section.eigenaar-content .content-links {
+  section.gebruiker-content .content-links {
     position: absolute;
     height: 60vh;
     top: 100px;
@@ -11,13 +11,13 @@ section.eigenaar-content {
     background-color: var(--background-color-light);
     z-index: 300;
     padding: 30px; }
-    section.eigenaar-content .content-links h1 {
+    section.gebruiker-content .content-links h1 {
       font-size: 50px;
       font-weight: bold; }
-    section.eigenaar-content .content-links p {
+    section.gebruiker-content .content-links p {
       font-size: 35px;
       margin-top: 30px; }
-  section.eigenaar-content .afbeelding {
+  section.gebruiker-content .afbeelding {
     position: absolute;
     top: 0;
     left: 30%;
@@ -26,35 +26,7 @@ section.eigenaar-content {
     width: 70%;
     background-position: -800px -650px; }
 
-section.diensten {
-  background-color: var(--background-color-light); }
-  section.diensten .diensten-title {
-    margin: 2em auto; }
-  section.diensten .diensten-wrapper .dienst {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 220px;
-    width: 220px;
-    margin: 0 20px;
-    background-color: var(--oranje);
-    color: var(--color-white);
-    border-radius: 50%;
-    cursor: pointer;
-    transition: all 0.5s ease;
-    text-align: center; }
-    section.diensten .diensten-wrapper .dienst:hover {
-      transform: scale(1.1);
-      z-index: 2; }
-    section.diensten .diensten-wrapper .dienst p {
-      font-size: 20px;
-      font-weight: bold;
-      margin-top: 10px; }
-  section.diensten .diensten-wrapper .dienst1 {
-    margin-left: auto; }
-
-section.gebruikers .col {
+section.gebruiker-gebruikers .col {
   color: var(--color-white);
   min-height: 400px;
   display: flex;
@@ -63,22 +35,22 @@ section.gebruikers .col {
   text-align: center;
   cursor: pointer;
   transition: all 0.5s ease; }
-  section.gebruikers .col:hover {
+  section.gebruiker-gebruikers .col:hover {
     transform: scale(1.01);
     z-index: 2;
     border-radius: 5px; }
-  section.gebruikers .col h1 {
+  section.gebruiker-gebruikers .col h1 {
     font-size: 65px;
     margin-top: 40px;
     font-weight: 700; }
-  section.gebruikers .col img {
+  section.gebruiker-gebruikers .col img {
     height: 200px;
     margin: 40px 0;
     width: 100%; }
 
-section.gebruikers #aan-de-slag {
+section.gebruiker-gebruikers #aan-de-slag {
   background-color: var(--licht-groen); }
-  section.gebruikers #aan-de-slag::after {
+  section.gebruiker-gebruikers #aan-de-slag::after {
     content: '';
     position: absolute;
     width: 0;
@@ -92,9 +64,9 @@ section.gebruikers #aan-de-slag {
     transform-origin: 0 0;
     transform: rotate(-45deg); }
 
-section.gebruikers #financieel {
+section.gebruiker-gebruikers #financieel {
   background-color: var(--donker-groen); }
-  section.gebruikers #financieel::after {
+  section.gebruiker-gebruikers #financieel::after {
     content: '';
     position: absolute;
     width: 0;
@@ -108,16 +80,16 @@ section.gebruikers #financieel {
     transform-origin: 0 0;
     transform: rotate(-45deg); }
 
-section.gebruikers .active {
+section.gebruiker-gebruikers .active {
   box-shadow: 0px 3px 3px 0 rgba(0, 0, 0, 0.4); }
 
-section.gebruikers .no-after::after {
+section.gebruiker-gebruikers .no-after::after {
   content: none !important; }
 
-section.gebruikers .do-after::after {
+section.gebruiker-gebruikers .do-after::after {
   content: '' !important; }
 
-header {
+gebruiker-header {
   color: var(--color-white);
   display: flex;
   flex-direction: column;
@@ -128,26 +100,26 @@ header {
   background-image: url(imgpath/Hero/hero-eigenaar.png);
   background-size: cover;
   background-position: center; }
-  header .header-content {
+  gebruiker-header .gebruiker-header-content {
     display: flex;
     align-items: center;
     height: 100vh;
     width: 100%;
     margin-left: 10%;
     margin-bottom: 200px; }
-    header .header-content .tekst {
+    gebruiker-header .gebruiker-header-content .gebruiker-tekst {
       margin-bottom: 10%; }
-    header .header-content h1,
-    header .header-content h3 {
+    gebruiker-header .gebruiker-header-content h1,
+    gebruiker-header .gebruiker-header-content h3 {
       text-align: left;
       font-weight: bold; }
-    header .header-content h1 {
+    gebruiker-header .gebruiker-header-content h1 {
       color: var(--color-white);
       font-size: 110px;
       margin-bottom: 30px; }
-    header .header-content h3 {
+    gebruiker-header .gebruiker-header-content h3 {
       margin-bottom: 30px;
       font-size: 50px; }
-    header .header-content img {
+    gebruiker-header .gebruiker-header-content img {
       width: 70%;
       margin-bottom: 20%; }
