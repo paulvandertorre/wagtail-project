@@ -158,8 +158,6 @@ L.circle([51.962531, 6.0672], 300, {
 
 var popup = L.popup();
 
-mymap.on('click', onMapClick);
-
 //! EIGENAAR PAGINA CONTENT WISSEL
 const aanDeSlag = document.getElementById('aan-de-slag');
 const financieel = document.getElementById('financieel');

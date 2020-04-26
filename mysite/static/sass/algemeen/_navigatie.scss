@@ -116,7 +116,7 @@ nav {
   color: #fff;
   z-index: 5000;
 
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-between;
 	padding: 2em !important;
@@ -199,10 +199,6 @@ nav {
         padding: 20px 30px;
       }
     }
-  }
-
-  .mobiel-menu {
-    display: none;
   }
 }
 

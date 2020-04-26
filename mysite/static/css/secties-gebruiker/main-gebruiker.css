@@ -21,7 +21,7 @@ section.gebruiker-content {
     position: absolute;
     top: 0;
     left: 30%;
-    background-image: url(imgpath/Hero/hero.jpg);
+    background-image: url(/mysite/mysite/static/assets/Hero/hero.jpg);
     height: 80vh;
     width: 70%;
     background-position: -800px -650px; }
@@ -89,7 +89,7 @@ section.gebruiker-gebruikers .no-after::after {
 section.gebruiker-gebruikers .do-after::after {
   content: '' !important; }
 
-gebruiker-header {
+header {
   color: var(--color-white);
   display: flex;
   flex-direction: column;
@@ -97,29 +97,29 @@ gebruiker-header {
   align-items: center;
   position: relative;
   height: 80vh;
-  background-image: url(imgpath/Hero/hero-eigenaar.png);
+  background-image: url(../../assets/Hero/hero-eigenaar.png);
   background-size: cover;
   background-position: center; }
-  gebruiker-header .gebruiker-header-content {
+  header .gebruiker-header-content {
     display: flex;
     align-items: center;
     height: 100vh;
     width: 100%;
     margin-left: 10%;
     margin-bottom: 200px; }
-    gebruiker-header .gebruiker-header-content .gebruiker-tekst {
+    header .gebruiker-header-content .gebruiker-tekst {
       margin-bottom: 10%; }
-    gebruiker-header .gebruiker-header-content h1,
-    gebruiker-header .gebruiker-header-content h3 {
+    header .gebruiker-header-content h1,
+    header .gebruiker-header-content h3 {
       text-align: left;
       font-weight: bold; }
-    gebruiker-header .gebruiker-header-content h1 {
+    header .gebruiker-header-content h1 {
       color: var(--color-white);
       font-size: 110px;
       margin-bottom: 30px; }
-    gebruiker-header .gebruiker-header-content h3 {
+    header .gebruiker-header-content h3 {
       margin-bottom: 30px;
       font-size: 50px; }
-    gebruiker-header .gebruiker-header-content img {
+    header .gebruiker-header-content img {
       width: 70%;
       margin-bottom: 20%; }

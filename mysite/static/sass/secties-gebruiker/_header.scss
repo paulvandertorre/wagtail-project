@@ -1,8 +1,5 @@
-// Variable to assets path
-$imgpath: "static/assets/";
-
 //! HEADER
-gebruiker-header {
+header {
 	color: var(--color-white);
 
 	display: flex;
@@ -11,7 +8,7 @@ gebruiker-header {
 	align-items: center;
 	position: relative;
 	height: 80vh;
-	background-image: url(#{imgpath}/Hero/hero-eigenaar.png);
+	background-image: url(../../assets/Hero/hero-eigenaar.png);
 	background-size: cover;
 	background-position: center;
 
